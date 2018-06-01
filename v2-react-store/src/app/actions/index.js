@@ -12,8 +12,8 @@ function receiveProducts(json){
     return {
         type: 'RECEIVE_PRODUCTS',
         products: json.map(data => {
-            data.author = data.metadata.author.title;
-            data.authorImage = data.metadata.author.metadata.image.url;
+            data.product = data.metadata.product.title;
+            data.productImage = data.metadata.product.metadata.image.url;
             return data
         }),
         receivedAt: Date.now()

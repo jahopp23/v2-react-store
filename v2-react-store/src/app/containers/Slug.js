@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchSlugPost } from '../actions/slug'
 import Content from '../components/contentSlug'
-import Header from '../components/headerSlug'
 import Footer from '../components/footer'
 import moment from 'moment';
+
 
 class Slug extends Component {
     componentDidMount(){
@@ -25,7 +25,7 @@ class Slug extends Component {
              imageUrl={this.props.slug.image}
              product={this.props.slug.content}
             />
-           <Footer />
+           {/* <Footer /> */}
            </div>
 
       )

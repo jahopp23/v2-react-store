@@ -10,8 +10,9 @@ function requestSlug(slug){
 
 function receiveSlug(json){
     const slug = {
-        'author': json.metadata.author.title,
-        'author_image': json.metadata.author.metadata.image.url,
+        'product': json.metadata.product.title,
+        'product_image': json.metadata.product.metadata.image.url,
+        'description': json.metadata.description,
         'image': json.metada.hero.url
     }
     return {

@@ -24,7 +24,7 @@ class Product extends Component {
                   <ProductList
                       products={this.props.data}
                       />
-                <Footer />
+                {/* <Footer /> */}
             </div>
         );
     }

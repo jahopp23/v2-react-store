@@ -1,0 +1,6 @@
+import React, { Component } from 'react'
+import ProductList from '../components/productList'
+import { connect } from 'react-redux'
+// import { toggleProduct, fetchProducts } from '../actions'
+// import { fetchSlugProduct } from '../actions'
+import PropTypes from 'prop-types'
